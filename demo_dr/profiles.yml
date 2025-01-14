@@ -1,0 +1,17 @@
+demo_pr:
+  outputs:
+    dev:
+      account: "la14000.ap-southeast-1"
+      database: "demo_dr_db"
+      # 
+      # user: "{{ env_var('SNF_USER') }}"
+      # password:  "{{ env_var('SNF_PASSWORD') }}"
+      user: gauravsnow
+      password:  Gau@81294
+      # 
+      role:  "demo_dr_engginer"
+      schema: "demo_pr"
+      threads: 1
+      type: snowflake
+      warehouse:  "demo_dr_wh"
+  target: dev
